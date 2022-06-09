@@ -86,6 +86,7 @@ function animate() {
     enemy.update()
 
     player.velocity.x = 0
+    enemy.velocity.x = 0
 
     // player movement
     if(keys.a.pressed && lastKey === 'a') {
