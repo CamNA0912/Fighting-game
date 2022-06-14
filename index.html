@@ -1,17 +1,30 @@
 <body>
     <!-- red container div-->
-    <div style="position: relative;">
+    <div style="position: relative; display: inline-block;">
         <!-- smaller red container div-->
-        <div style="position: absolute; display: flex;">
+        <div 
+            style="
+            position: absolute; 
+            display: flex; 
+            width: 100%; 
+            align-items: center
+            "
+        >
+
             <!--Player health-->
-            <div style="background-color: yellow; height: 30px; width: 100px;"></div>
+            <div 
+            style="background-color: yellow; height: 30px; width: 100%;"></div>
 
             <!--Timer-->
-            <div style="background-color: red; height: 100px; width: 100px;"></div>
+            <div 
+                style="background-color: red; 
+                height: 100px; 
+                width: 100px; 
+                flex-shrink: 0;">
+            </div>
 
             <!--Enemy health-->
-            <div style="background-color: yellow; height: 30px; width: 100px;"></div>
-
+            <div style="background-color: yellow; height: 30px; width: 100%;"></div>
         </div>
         <canvas></canvas>
     </div>
