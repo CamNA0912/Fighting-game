@@ -138,8 +138,16 @@ function decreaseTimer() {
         document.querySelector('#timer').innerHTML = timer
     }
 
+    if (timer === 0) {
+        document.querySelector('#displayText').style.display = 'flex'
     if (player.health === enemy.health) {
-        console.log('tie')
+        document.querySelector('#displayText').innerHTML = 'Tie'
+        document.querySelector('#displayText').style.display = 'flex'
+        } else if (player.health > enemy.health) {
+            document.querySelector('#displayText').innerHTML = 'Player 1 win'        
+        } else if (player.health < enemy.health) {
+            document.querySelector('#displayText').innerHTML = 'Player 2 win' 
+        }
     }
 }
 
