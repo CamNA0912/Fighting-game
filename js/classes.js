@@ -26,7 +26,7 @@ class Sprite {
     
     update() {
         this.draw()
-        if (this.framesCurrent < this.framesMax) {
+        if (this.framesCurrent < this.framesMax - 1) {
             this.framesCurrent++
         } else this.framesCurrent = 0
         
